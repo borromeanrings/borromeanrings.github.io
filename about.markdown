@@ -4,6 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Welcome to this website. I’m an undergraduate student at the university of Tehran majoring in mathematics. I'm interested in logics and geometry. Here I try to regularly post about topics related to mathematics and other things that I find important or interesting in general.
+Hello and welcome to this blog. My name is Mohammad Mahdi Kooranifar and I’m an undergraduate student at the university of Tehran majoring in mathematics. I'm interested in logics and geometry. Here I post about topics related to mathematics and other things that I find important or interesting.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+My email is ``[mylastname][atsign]ut.ac.ir`` if you would like to contact me.
+
+<!-- Also if you, are a student too, I would like to encourage creating your own blog. Here [some link] I fully described how this blog is set up, so that you can make one alike if you wish. -->
+
+Hope you enjoy!
+

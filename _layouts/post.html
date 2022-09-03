@@ -32,9 +32,11 @@ layout: default
       {%- endif -%}</p>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
+  <div class="post-content" style="text-align: justify;" itemprop="articleBody">
     {{ content }}
   </div>
+
+  <p><b>NOTE:</b> Unfortunately the comment section does not show up for Iran IP addresses. Please use VPN or proxy servers (or any other way you find convenient) to submit your comment.  </p>
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
