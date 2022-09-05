@@ -1,4 +1,4 @@
-I"$"<figure class="image">
+I"1"<figure class="image">
     <img src="/images/MichaelLukas.jpg" alt="Jacob's ladder – Michael Willmann" />
     <figcaption style="font-style: italic; color: gray; margin-top: 10px; margin-bottom: 30
     px;"> Jacob's ladder – Michael Willmann</figcaption>
@@ -11,6 +11,8 @@
 <blockquote>
   <p>There exists no cardinal number between the cardinal of natural numbers and that of real numbers. Equivalently, every uncountable subset of real numbers has the power of the continuum.</p>
 </blockquote>
+
+<!--more-->
 
 <p>Continuum hypothesis was advanced by Georg Cantor in 1878, and establishing its truth or falsehood is the first of Hilbert’s famous 23 problems presented in 1900. Many mathematicians tried to settle this question, but for a while, no one couldn’t find a counter-example subset of reals, either couldn’t prove \(\mathsf{CH}\). The culmination of over 80 years of mathematical endeavor  illuminated that, \(\mathsf{CH}\)’s truth value, in the sense that would be discussed in the following paragraphs, is independent of the world of mathematics.</p>
 

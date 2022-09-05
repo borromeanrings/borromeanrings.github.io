@@ -32,13 +32,19 @@ layout: homepage
             {{ post.title | escape }}
           </a>
         </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+          {%- if site.show_excerpts -%}
+          <p style="text-align: justify; margin-top: -10px;" >{{ post.excerpt}}</p>
+         {%- endif -%}
+         {%- if post.continue_reading_button -%}
+         <p style="float:right; margin-top: -15px;" > 
+          <a href="{{ post.url | relative_url }}">
+            Continue reading 
+          </a></p>
+         {%- endif -%}
       </li>
       {%- endfor -%}
     </ul>
-
+    
     {% if site.paginate %}
       <div class="pager">
         <ul class="pagination">
