@@ -2,7 +2,7 @@
 layout: post
 title:  "About Gödel's Program"
 date:   2022-09-03 15:48:21 +0430
-categories: jekyll update
+tags: [Mathematics, Set Theory]
 excerpt: The Continuum Hypothesis (denoted by $ \mathsf{CH}$ from now on) is the following claim. There exists no cardinal number between the cardinal of natural numbers and that of real numbers. Continuum hypothesis was advanced by Georg Cantor in 1878, and establishing its truth or falsehood is the first of Hilbert's famous 23 problems presented in 1900. Many mathematicians tried to settle this question, but for a while, no one couldn't find a counter-example subset of reals, either couldn't prove $ \mathsf{CH}$. The culmination of over 80 years of mathematical endeavor  illuminated that, $ \mathsf{CH}$'s truth value, in the sense that would be discussed in the following paragraphs, is independent of the world of mathematics...
 
 continue_reading_button: true

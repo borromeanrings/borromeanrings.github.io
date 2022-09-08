@@ -23,8 +23,15 @@ layout: default
           {{ mdate | date: date_format }}
         </time>
       {%- endif -%}
+      {% if page.tags.size > 0 %}
+      <span> 
+        • {% for tag in page.tags %}
+            <a href="{{ site.baseurl }}/categories/#{{ tag | cgi_escape }}" rel="tag" style="background-color: rgb(230, 230, 230); padding: 4px; border-radius: 4px;">{{ tag }}</a>{% unless forloop.last %} {% endunless %}
+          {% endfor %}
+      </span>
+      {% endif %}
       {%- if page.author -%}
-        • {% for author in page.author %}
+      – {% for author in page.author %}
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
             {%- if forloop.last == false %}, {% endif -%}
