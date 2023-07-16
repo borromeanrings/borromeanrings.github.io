@@ -1,0 +1,14 @@
+I"�<p>This is the first in a series of posts where some steps through understanding the $h$-cobordism theorem will be discussed, as I go along. As writing down everything is time-consuming, I will only be mentioning some technicalities that interest me, but will provide the main ideas of other parts as well, so that these posts still have a form of progress through the theorem.</p>
+
+<p>Why $h$-cobordism? I was first interested in the topic when I found out that it was used by Smale to prove the $n$-dimensional topological Poincare conjecture for all $n \geq 5$. It is interesting that cases $n=3,4$ were proved much later using sophisticated techniques (I will surely remark on where Smale’s argument breaks for $n=3,4$ in later posts). The situation is contrary to our idea that working in higher dimensions seem to be harder. This got me more interested in low-dimensional topology as well.</p>
+
+<p>Also I got interested in the $h$-cobordism as I intended to understand <a href="https://en.wikipedia.org/wiki/Floer_homology">Floer homology</a>. Floer homology is said to be (and I still don’t know why) the infinite-dimensional analogue of <a href="https://en.wikipedia.org/wiki/Morse_theory">Morse theory</a>. The $h$-cobordism theorem makes a fair use of Morse theory. So for me, $h$-cobordism has been appealing on its own, and also in line with further interests.</p>
+
+<p>I will mainly be going through <a href="https://www.maths.ed.ac.uk/~v1ranick/surgery/hcobord.pdf">Milnor’s <em>Lectures on the $h$-cobordism theorem</em></a>, but not sure exactly for now; hopefully I will later provide a suggested reading plan for interested readers, having done some trial-and-error.</p>
+
+<p>I will end this post with the statement of the $h$-cobordism theorem. A <a href="https://en.wikipedia.org/wiki/Cobordism">cobordism</a> $(W; \partial_0 W, \partial_1 W)$ is said to be an $h$-cobordism, if the inclusions $\partial_0 W \to W$ and $\partial_1 W \to W$ are homotopy equivalences. A cobordism $(W; \partial_0 W, \partial_1 W)$ is said to be <em>trivial</em> if $(W; \partial_0 W, \partial_1 W)$ and $(\partial_0 W \times [0,1]; \partial_0 W \times \{0\}, \partial_0 W \times \{1\})$ are diffeomorphic relative to $\partial_0 W$.</p>
+
+<blockquote>
+
+</blockquote>
+:ET
