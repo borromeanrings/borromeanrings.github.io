@@ -4,7 +4,10 @@
 // $base-font-family: courier new;
 $base-font-family: 'EB Garamond', serif;
 $brand-color: #1B65C5;
-$background-color: #fdfdfd;
+$base-font-size:   20px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+// $base-line-height: 1.5 !default;
 // #2754BD
 // good orange eb6424
 // this is a better orange I feel (now) E46D3A
