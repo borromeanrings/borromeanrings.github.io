@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script>
+		window.MathJax = {
+		  tex: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']]
+		  }
+		};
+		</script>
+		<script id="MathJax-script" async
+		  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    </head><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The definition of smooth structure compatibility | Borromean Rings</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="The definition of smooth structure compatibility" />
+<meta name="author" content="Sepehr Kooranifar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Say $X$ is a manifold and $p$ is a point in $M$. If $(U, \varphi_1)$ and $(V, \varphi_2)$ are charts about $p$, you probably know that we call the two charts compatible if $\varphi_2 \circ \varphi_1^{-1}: \varphi_1 (U \cap V) \to \varphi_2 (U \cap V)$ is a diffeomorphism. This definition had been mysterious to me, and as I was learning about galilean structures today, I could find it more understandable…" />
+<meta property="og:description" content="Say $X$ is a manifold and $p$ is a point in $M$. If $(U, \varphi_1)$ and $(V, \varphi_2)$ are charts about $p$, you probably know that we call the two charts compatible if $\varphi_2 \circ \varphi_1^{-1}: \varphi_1 (U \cap V) \to \varphi_2 (U \cap V)$ is a diffeomorphism. This definition had been mysterious to me, and as I was learning about galilean structures today, I could find it more understandable…" />
+<link rel="canonical" href="http://localhost:4000/2023/07/24/smoothstructure.html" />
+<meta property="og:url" content="http://localhost:4000/2023/07/24/smoothstructure.html" />
+<meta property="og:site_name" content="Borromean Rings" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-07-24T16:19:21+03:30" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The definition of smooth structure compatibility" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Sepehr Kooranifar"},"dateModified":"2023-07-24T16:19:21+03:30","datePublished":"2023-07-24T16:19:21+03:30","description":"Say $X$ is a manifold and $p$ is a point in $M$. If $(U, \\varphi_1)$ and $(V, \\varphi_2)$ are charts about $p$, you probably know that we call the two charts compatible if $\\varphi_2 \\circ \\varphi_1^{-1}: \\varphi_1 (U \\cap V) \\to \\varphi_2 (U \\cap V)$ is a diffeomorphism. This definition had been mysterious to me, and as I was learning about galilean structures today, I could find it more understandable…","headline":"The definition of smooth structure compatibility","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/07/24/smoothstructure.html"},"url":"http://localhost:4000/2023/07/24/smoothstructure.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Borromean Rings" /></head>
+<body><header class="site-header">
+    <div class="wrapper"><a class="site-title" rel="author" href="/">Borromean Rings</a><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+  
+          <div class="trigger"><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/about/">About</a></div>
+        </nav></div>
+  </header>
+  <main class="page-content" aria-label="Content">
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<!-- asl e maajara -->
+	<script id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    
+    <h1 class="post-title p-name" itemprop="name headline">The definition of smooth structure compatibility</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2023-07-24T16:19:21+03:30" itemprop="datePublished">
+        Jul 24, 2023
+      </time>
+      <span style="line-height: 2;"> 
+        • 
+            <a href="/categories/#Mathematics" rel="tag" style="background-color: rgb(240, 240, 240); padding: 4px; border-radius: 4px;">Mathematics</a>
+          
+            <a href="/categories/#Manifold+Theory" rel="tag" style="background-color: rgb(240, 240, 240); padding: 4px; border-radius: 4px;">Manifold Theory</a>
+          
+      </span>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>As I was learning about galilean space-time structures (through Arnold’s <em>Mathematical Methods of Classical Mechanics</em>), I found things to be helpful for me to understand the meaning of compatibility of smooth structures. 
+Let $M$ be a set and $\psi_1 : M \to \mathbb{R} \times \mathbb{R}^3$ be any (as wild as you wish) one-to-one and onto map. The function $\psi_1$ is then said to be defining a <em>Galilean coordinate system on $M$</em>. And a coordinate system $\psi_2$ is said to be <em>moving uniformly</em> with respect to $\psi_1$ if the map $ \psi_2 \circ \psi_1^{-1} : \mathbb{R} \times \mathbb{R}^3 \to \mathbb{R} \times \mathbb{R}^3$ is a galilean transformation on $\mathbb{R} \times \mathbb{R}^3$; at which case, we say  $\psi_1$ and $\psi_2$ give $M$ the same galilean structure.</p>
+
+<p>A Galilean transformation is easily imaginable; it can be proved to be just a combination of the rotation of the inertial observer, and uniform movement of him/her with a fixed velocity vector, and an adjustment in our clock. These transformations are the ones that are irrelevant to the physical phenomena that is happening. That is to say, $\psi_1$ and $\psi_2$ are <em>assigning</em> the same physical structure to $M$ (time function is the same, the distance function for the simultaneous events is the same, etc.). An example of a galilean structure that is not the same as $\psi_1$ is a map that first applies $\psi_1$ itself, and then stretches the time coordinate by a factor of $2$; name this map $\psi_3$. To see that $\psi_3$ is not the same structure as $\psi_1$, consider the inverse image of the time axis of $\mathbb{R} \times \mathbb{R}^3$, i.e. $T = \psi_1^{-1} \big( \mathrm{span} (1, 0, \dots, 0) \big)$; also we have $T = \psi_3^{-1} \big( \mathrm{span} (1, 0, \dots, 0) \big)$. Moving along $T$ (which is the piece of $M$ that is meant to encode passage of time at the origin of space), and watching the images by $\psi_1$ and $\psi_3$, we can see that time passes with double-speed in $\psi_3(M)$ compared to $\psi_1(M)$. Therefore, the structures that $\psi_1$ and $\psi_3$ define on $M$ are different as space-time structures.</p>
+
+<p>Same is the story in the theory of smooth manifolds. Say $X$ is a two-dimensional manifold and $p$ be a point in $X$. If $(U, \varphi_1)$ and $(V, \varphi_2)$ are charts about $p$, we call the two charts compatible if the map $\varphi_2 \circ \varphi_1^{-1}: \varphi_1 (U \cap V) \to \varphi_2 (U \cap V)$ is a diffeomorphism. We may confine our attention to $U \cap V$, because this is the place where talking about compatibility is more meaningful. Just like above, the maps $\varphi_1$ and $\varphi_2$ are assigning the smooth structure of $\mathbb{R}^2$ to $X$ in their own way. An analogue example of the incompatible structures above could be the following: Let $X = \mathbb{R}^2$ and suppose $L$ is the graph of the absolute value function residing in $X$. Suppose $\varphi_1$ is the identity map, and $\varphi_2(L)$ is a straight line in $\mathbb{R}^2$; then $L$ with the structure coming from $\varphi_1$ is considering $L$ as a non-smooth curve, but with the structure from $\varphi_2$, it is actually a smooth curve in $X$. Here, diffeomorphisms are picked to be the group of maps that mod out all the differences that are unimportant from a differentiable viewpoint (just like the way that galilean transformations group helped us dismiss rotations, clock changes and uniform motion of the observer). Therefore, the diffeomorphism group (along with the galilean transformation group in the above scenario) is <em>defining</em> insignificant differences; whatever difference that cannot be removed by applying a member of the group, is considered as a real difference between the structures. Like in our example, if $\gamma$ is any diffeomorphism of $\mathbb{R}^2$, then $\gamma \circ \varphi_1(L) = \gamma (L)$ will still have the edge-point and cannot be equal to a straight line, so $\varphi_1$ cannot become $\varphi_2$ by means of an unimportant change (i.e. a diffeomorphism like $\gamma$), hence these structures are different.</p>
+
+<!-- 
+A _Galilean space-time structure_ consists of the following:
+
+- The universe: A four-dimensional affine space $A^4$. Where point of $A^4$ are called _world points_ or _events_.
+- Time: a linear map $t: \mathbb{R}^4 \to \mathbb{R}$ from the vector space of parallel displacements of $A^4$ to the real ''time axis'' (so the time interval between two points $a,b \in A^4$ is $t(a-b)$).
+- A distance function between simultaneous events: a function $\rho : A^3 \times A^3 \to \mathbb{R}$ which comes from a scalar product on the space $\mathbb{R}^3$. The value $\rho(a,b)$ is defined only if the events $a,b$ belong to a same time (i.e. $a-b$ belongs to the kernel of the time map $t$).
+
+In order to capture the notion of inertial observer, _Galilean transformations_ are defined, which are affine transformations on the universe that preserve the time $t$ and the simultaneous distance function $\rho$.
+
+As an example, the space $\mathbb{R} \times \mathbb{R}^3$ has a natural Galilean structure: consider it as an affine space, and let the map $t$ be projection along the first coordinate, and define $\rho$ to be the usual euclidean distance on $\mathbb{R}^3$.  An illuminating example of a Galilean transformation in this case is $g: \mathbb{R} \times \mathbb{R}^3 \to \mathbb{R} \times \mathbb{R}^3$ with $(t, \mathbf{x}) \mapsto (t, \mathbf{x} + \mathbf{v}t)$; it must be thought of as the same structure $\mathbb{R} \times \mathbb{R}^3$ but that the observer is having a uniform motion with the velocity vector $-\mathbf{v}$. Other examples of Galilean transformations are $ (t, \mathbf{x}) \mapsto (t+s, \mathbf{x})$ (an adjustment in our clock), and $(t, \mathbf{x}) \mapsto (t, G \mathbf{x})$ where $G$ is an orthogonal matrix (this is just a rotation of the observer in the 3-space). Also, let us just accept that it is provable that all of the Galilean transformations on $\mathbb{R} \times \mathbb{R}^3$ are combination of the three mentioned transformations, and also that every Galilean structure is isomorphic to $\mathbb{R} \times \mathbb{R}^3$. So we can take any Galilean structure as _the_ canonical one; we will just stick with $\mathbb{R} \times \mathbb{R}^3$. -->
+
+  </div>
+
+  <p><b>NOTE:</b> Unfortunately the comment section does not show up for Iran IP addresses. Please use VPN or proxy servers (or any other way you find convenient) to submit your comment.  </p>
+<a class="u-url" href="/2023/07/24/smoothstructure.html" hidden></a>
+</article>
+
+
+  
+
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <div style="display: grid; grid-template-columns: 1fr 1fr;">
+    <div style="padding: 10px;">
+      <div style="display: flex; justify-content: right; align-items: right;">
+        <script async src="https://eomail6.com/form/9a3b70b2-2240-11ee-be50-53e0b522f832.js" data-form="9a3b70b2-2240-11ee-be50-53e0b522f832"></script>
+      </div>
+    </div>
+    <div style="padding: 23px;">
+      <div class="footer-col-wrapper">
+        <div class="footer-col">
+          <ul class="contact-list">
+            <li class="p-name">Sepehr Kooranifar</li>
+            <li><a class="u-email" href="mailto:kooranifar@gmail.com">kooranifar@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p></p>
+        </div>
+      </div>
+  
+      <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+    </div>
+  </div>
+  <data class="u-url" href="/"></data>
+  </footer></body>
+
+</html>

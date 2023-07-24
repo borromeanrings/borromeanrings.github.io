@@ -1,0 +1,2 @@
+I"¡<p>Say $X$ is a manifold and $p$ is a point in $M$. If $(U, \varphi_1)$ and $(V, \varphi_2)$ are charts about $p$, you probably know that we call the two charts compatible if $\varphi_2 \circ \varphi_1^{-1}: \varphi_1 (U \cap V) \to \varphi_2 (U \cap V)$ is a diffeomorphism. This definition had been mysterious to me, and as I was learning about galilean structures today, I could find it more understandableâ€¦</p>
+:ET
