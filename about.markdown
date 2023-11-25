@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Welcome to this blog. My name is Sepehr (/Mohammad Mehdi) Kooranifar and I’m an undergraduate student at the university of Tehran majoring in mathematics. I'm interested in geometry and logic. 
+Welcome to this blog. My name is Sepehr (/Mohammad Mehdi) Kooranifar and currently I’m a master's student at Sharif University of Technology majoring in mathematics. I'm interested in geometry and logic. 
 
 This blog is meant to be the realm of my musings --mathematics and other facets of our existence.
 

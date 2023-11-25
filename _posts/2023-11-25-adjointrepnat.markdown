@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "The Lie bracket commutes with the differential of a Lie group homomorphism"
+date:   2023-11-25 23:19:21 +0430
+tags: [Mathematics]
+excerpt: >
+    Donaldson had written that "it follows from the definitions", but I needed to ponder on it for a while... 
+    
+continue_reading_button: true
+---
+
+Let $G,H$ be Lie groups, $\mathfrak{g},\mathfrak{h}$ be their respective Lie algebras, and $\alpha: G \to H$ be a Lie group homomorphism. The Lie bracket on $\mathfrak{g}$ through the adjoint representation of the group $Ad: G \to GL(\mathfrak{g})$ as $[\xi, \eta] := Ad_*(\xi)(\eta)$. Same for $\mathfrak{h}$.
+The differential of $Ad$ is also usually denoted as $ad$. We want to prove that 
+$$ \big[d \alpha (\xi), d \alpha (\eta)\big]_{\mathfrak{h}} = d \alpha \big([\xi, \eta]_{\mathfrak{g}}\big) $$.
+
+Let $g_t$ and $h_s$ be parameterized paths in $G$ that represent $\xi, \eta$ respectively. We have $ \frac{\partial}{\partial s} \rvert_{s=0} \ g_t h_s g_t^{-1} = ad_{g_t}(\eta)$, and we can show $ \frac{\partial}{\partial s} \rvert_{s=0} \ g_t h_s g_t^{-1} h_s^{-1} = ad_{g_t}(\eta) - \eta$ 
+since the differential of the inverse map $(g \mapsto g^{-1})$ is equal to $-1$ (differentiate $g_t g_t^{-1} =1$). Taking $ \frac{\partial}{\partial t} \rvert_{t=0}$ from the last equality we get
+$ \frac{\partial^2}{\partial t \partial s} \rvert_{t=s=0} \ g_t h_s g_t^{-1} h_s^{-1} = [\xi, \eta]$. 
+
+Now for proving the identity, on one hand,  
+\$$ \frac{\partial}{\partial s} \big\rvert_{s=0} \alpha(g_t) \alpha(h_s) \alpha ( g_t^{-1}) \alpha( h_s^{-1}) = ad_{\alpha(g_t)}(d \alpha(\eta)) - d \alpha (\eta)$$ 
+and taking $ \frac{\partial}{\partial t} \rvert_{t=0}$ we derive $[d \alpha(\xi), d \alpha(\eta)]$. On the other hand we can take the $\alpha$ in $ \frac{\partial}{\partial s} \rvert_{s=0} \ \alpha(g_t) \alpha(h_s) \alpha ( g_t^{-1}) \alpha( h_s^{-1}) = \frac{\partial}{\partial s} \rvert_{s = 0} \ \alpha \big(g_t h_s g_t^{-1} h_s^{-1} \big) $ outside of the derivative $ \frac{\partial}{\partial s} \rvert_{s = 0}$ which yields $d \alpha \big( \frac{\partial}{\partial s} \rvert_{s = 0} \ g_t h_s g_t^{-1} h_s^{-1} \big) $. Taking $ \frac{\partial}{\partial t} \rvert_{t=0}$ from the last expressions and again pushing $d \alpha$ outside of the derivative by $t$ gives
+$  dd \alpha \big ( \frac{\partial^2}{\partial t \partial s} \rvert_{t = s = 0} \ g_t h_s g_t^{-1} h_s^{-1} \big) = dd \alpha \big( [\xi, \eta] \big) $; and since $d \alpha$ is linear,  $ d d \alpha = d \alpha$ and we are done.
+
+Applying this to $ \alpha = Ad$ also yields the Jacobi identity for the Lie bracket.

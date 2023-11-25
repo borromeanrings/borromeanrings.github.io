@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script>
+		window.MathJax = {
+		  tex: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']]
+		  }
+		};
+		</script>
+		<script id="MathJax-script" async
+		  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    </head><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The Lie bracket commutes with the differential of a Lie group homomorphism | Borromean Rings</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="The Lie bracket commutes with the differential of a Lie group homomorphism" />
+<meta name="author" content="Sepehr Kooranifar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Donaldson had written that “it follows from the definitions”, but I needed to ponder on it for a while…" />
+<meta property="og:description" content="Donaldson had written that “it follows from the definitions”, but I needed to ponder on it for a while…" />
+<link rel="canonical" href="http://localhost:4000/2023/11/25/adjointrepnat.html" />
+<meta property="og:url" content="http://localhost:4000/2023/11/25/adjointrepnat.html" />
+<meta property="og:site_name" content="Borromean Rings" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-11-25T18:49:21+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The Lie bracket commutes with the differential of a Lie group homomorphism" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Sepehr Kooranifar"},"dateModified":"2023-11-25T18:49:21+00:00","datePublished":"2023-11-25T18:49:21+00:00","description":"Donaldson had written that “it follows from the definitions”, but I needed to ponder on it for a while…","headline":"The Lie bracket commutes with the differential of a Lie group homomorphism","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/11/25/adjointrepnat.html"},"url":"http://localhost:4000/2023/11/25/adjointrepnat.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Borromean Rings" /></head>
+<body><header class="site-header">
+    <div class="wrapper"><a class="site-title" rel="author" href="/">Borromean Rings</a><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+  
+          <div class="trigger"><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/about/">About</a></div>
+        </nav></div>
+  </header>
+  <main class="page-content" aria-label="Content">
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<!-- asl e maajara -->
+	<script id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    
+    <h1 class="post-title p-name" itemprop="name headline">The Lie bracket commutes with the differential of a Lie group homomorphism</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2023-11-25T18:49:21+00:00" itemprop="datePublished">
+        Nov 25, 2023
+      </time>
+      <span style="line-height: 2;"> 
+        • 
+            <a href="/categories/#Mathematics" rel="tag" style="background-color: rgb(240, 240, 240); padding: 4px; border-radius: 4px;">Mathematics</a>
+          
+      </span>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Let $G,H$ be Lie groups, $\mathfrak{g},\mathfrak{h}$ be their respective Lie algebras, and $\alpha: G \to H$ be a Lie group homomorphism. The Lie bracket on $\mathfrak{g}$ through the adjoint representation of the group $Ad: G \to GL(\mathfrak{g})$ as $[\xi, \eta] := Ad_*(\xi)(\eta)$. Same for $\mathfrak{h}$.
+The differential of $Ad$ is also usually denoted as $ad$. We want to prove that 
+\(\big[d \alpha (\xi), d \alpha (\eta)\big]_{\mathfrak{h}} = d \alpha \big([\xi, \eta]_{\mathfrak{g}}\big)\).</p>
+
+<p>Let $g_t$ and $h_s$ be parameterized paths in $G$ that represent $\xi, \eta$ respectively. We have $ \frac{\partial}{\partial s} \rvert_{s=0} \ g_t h_s g_t^{-1} = ad_{g_t}(\eta)$, and we can show $ \frac{\partial}{\partial s} \rvert_{s=0} \ g_t h_s g_t^{-1} h_s^{-1} = ad_{g_t}(\eta) - \eta$ 
+since the differential of the inverse map $(g \mapsto g^{-1})$ is equal to $-1$ (differentiate $g_t g_t^{-1} =1$). Taking $ \frac{\partial}{\partial t} \rvert_{t=0}$ from the last equality we get
+$ \frac{\partial^2}{\partial t \partial s} \rvert_{t=s=0} \ g_t h_s g_t^{-1} h_s^{-1} = [\xi, \eta]$.</p>
+
+<p>Now for proving the identity, on one hand,<br />
+$$ \frac{\partial}{\partial s} \big\rvert_{s=0} \alpha(g_t) \alpha(h_s) \alpha ( g_t^{-1}) \alpha( h_s^{-1}) = ad_{\alpha(g_t)}(d \alpha(\eta)) - d \alpha (\eta)$$ 
+and taking $ \frac{\partial}{\partial t} \rvert_{t=0}$ we derive $[d \alpha(\xi), d \alpha(\eta)]$. On the other hand we can take the $\alpha$ in $ \frac{\partial}{\partial s} \rvert_{s=0} \ \alpha(g_t) \alpha(h_s) \alpha ( g_t^{-1}) \alpha( h_s^{-1}) = \frac{\partial}{\partial s} \rvert_{s = 0} \ \alpha \big(g_t h_s g_t^{-1} h_s^{-1} \big) $ outside of the derivative $ \frac{\partial}{\partial s} \rvert_{s = 0}$ which yields $d \alpha \big( \frac{\partial}{\partial s} \rvert_{s = 0} \ g_t h_s g_t^{-1} h_s^{-1} \big) $. Taking $ \frac{\partial}{\partial t} \rvert_{t=0}$ from the last expressions and again pushing $d \alpha$ outside of the derivative by $t$ gives
+$  dd \alpha \big ( \frac{\partial^2}{\partial t \partial s} \rvert_{t = s = 0} \ g_t h_s g_t^{-1} h_s^{-1} \big) = dd \alpha \big( [\xi, \eta] \big) $; and since $d \alpha$ is linear,  $ d d \alpha = d \alpha$ and we are done.</p>
+
+<p>Applying this to $ \alpha = Ad$ also yields the Jacobi identity for the Lie bracket.</p>
+
+  </div>
+
+  <p><b>NOTE:</b> Unfortunately the comment section does not show up for Iran IP addresses. Please use VPN or proxy servers (or any other way you find convenient) to submit your comment.  </p>
+<a class="u-url" href="/2023/11/25/adjointrepnat.html" hidden></a>
+</article>
+
+
+  
+
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <div style="display: grid; grid-template-columns: 1fr 1fr;">
+    <div style="padding: 10px;">
+      <div style="display: flex; justify-content: right; align-items: right;">
+        <script async src="https://eomail6.com/form/9a3b70b2-2240-11ee-be50-53e0b522f832.js" data-form="9a3b70b2-2240-11ee-be50-53e0b522f832"></script>
+      </div>
+    </div>
+    <div style="padding: 23px;">
+      <div class="footer-col-wrapper">
+        <div class="footer-col">
+          <ul class="contact-list">
+            <li class="p-name">Sepehr Kooranifar</li>
+            <li><a class="u-email" href="mailto:kooranifar@gmail.com">kooranifar@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p></p>
+        </div>
+      </div>
+  
+      <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+    </div>
+  </div>
+  <data class="u-url" href="/"></data>
+  </footer></body>
+
+</html>
